@@ -1,0 +1,37 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first.active=link_to pat(:list), url(:auditions, :index)
+      %li=link_to pat(:new), url(:auditions, :new)
+  .content
+    %h2.title
+      =pat(:all)
+      =mt(:auditions)
+    .inner
+      %table.table
+        %tr
+          %th.first=mat(:audition, :id)
+          %th=mat(:audition, :title)
+          %th=mat(:audition, :vote_from)
+          %th=mat(:audition, :vote_until)
+          %th=mat(:audition, :published_at)
+          %th=mat(:audition, :created_at)
+          %th=mat(:audition, :updated_at)
+          %th.last="&nbsp;"
+        -@auditions.each do |audition|
+          %tr
+            %td.first=audition.id
+            %td=audition.title
+            %td=audition.vote_from
+            %td=audition.vote_until
+            %td=audition.published_at
+            %td=audition.created_at
+            %td=audition.updated_at
+            %td.last
+              =button_to pat(:edit), url(:auditions, :edit, :id => audition.id), :method => :get, :class => :button_to
+              ="|"
+              =button_to pat(:delete), url(:auditions, :destroy, :id => audition.id), :method => :delete, :class => :button_to, :onsubmit => "return confirm('#{pat(:confirm)}')"
+      .actions-bar.wat-cf
+        .actions="&nbsp;"
+
+-content_for :sidebar, partial("base/sidebar")

@@ -1,0 +1,293 @@
+<h1>ツイゲキ2.0 ホーム</h1>
+
+<section id="teams">
+	<h2>キャスト・出演チーム</h2>
+
+	<table class="casting">
+		<thead>
+			<tr>
+				<th scope="col">チームA</th>
+				<th scope="col" class="character">キャラ</th>
+				<th scope="col">チームB</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<a href="http://twitter.com/himeringo908" class="user female" title="利咲"><img src="http://api.dan.co.jp/twicon/himeringo908/mini" alt="利咲" /></a>
+				</td>
+				<th scope="col">
+					<img src="http://api.dan.co.jp/twicon/makoPi/normal" alt="ヘタレ" />
+				</th>
+				<td class="leader">
+					<a href="http://twitter.com/chihi69" class="user female" title="遠藤千広"><img src="http://api.dan.co.jp/twicon/chihi69/mini" alt="遠藤千広" /></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="leader">
+					役者未定
+				</td>
+				<th scope="col">
+					<img src="http://api.dan.co.jp/twicon/maryanXD/normal" alt="パー" />
+				</th>
+				<td>
+					役者未定
+				</td>
+			</tr>
+			<tr>
+				<td>
+					役者未定
+				</td>
+				<th scope="col">
+					<img src="http://api.dan.co.jp/twicon/ichi23/mini" alt="" />
+				</th>
+				<td>
+					役者未定
+				</td>
+			</tr>
+			<tr>
+				<td>
+					役者未定
+				</td>
+				<th scope="col">
+					<img src="http://api.dan.co.jp/twicon/Juntan/mini" alt="" />
+				</th>
+				<td>
+					役者未定
+				</td>
+			</tr>
+			<tr>
+				<td>
+					役者未定
+				</td>
+				<th scope="col">
+					<img src="http://api.dan.co.jp/twicon/freedom_hiro/mini" alt="" />
+				</th>
+				<td>
+					役者未定
+				</td>
+			</tr>
+			<tr>
+				<td>
+					役者未定
+				</td>
+				<th scope="col">
+					<img src="http://api.dan.co.jp/twicon/poteto3/mini" alt="" />
+				</th>
+				<td>
+					役者未定
+				</td>
+			</tr>
+			<tr>
+				<td>
+					役者未定
+				</td>
+				<th scope="col">
+					<img src="http://api.dan.co.jp/twicon/hoshimirui/mini" alt="" />
+				</th>
+				<td>
+					役者未定
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<section class="team" id="team_a">
+		<h3><%= @team_a.title %></h3>
+		<a href="#rule-login" class="to-cheer"><%= @team_a.title %>を応援</a>
+	</section>
+	<section class="team" id="team_b">
+		<h3><%= @team_b.title %></h3>
+		<a href="#rule-login" class="to-cheer"><%= @team_b.title %>を応援</a>
+	</section>
+
+	<p>同じ設定、同じ役柄、けれど異なる２つのストーリー。</p>
+	<p>ツイゲキ ver.2.0 は、２チーム制による公演ステージ数争奪戦。</p>
+	<p>あなたの応援が、勝敗を左右する？</p>
+
+	<div class="cheer-tweets">
+		<script type="text/javascript">
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'twigeki.com',
+  title:  '',
+  interval: 6000,
+  subject: '',
+  width: 'auto',
+  height: 700,
+  theme: {
+    shell: {
+      background: 'transparent',
+      color: '#000000'
+    },
+    tweets: {
+      background: 'transparent',
+      color: '#444444',
+      links: '#961226'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+		</script>
+	</div>
+	<div class="cheer-tweets">
+		<script type="text/javascript">
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'twigeki.com',
+  title:  '',
+  interval: 6000,
+  subject: '',
+  width: 'auto',
+  height: 700,
+  theme: {
+    shell: {
+      background: 'transparent',
+      color: '#000000'
+    },
+    tweets: {
+      background: 'transparent',
+      color: '#444444',
+      links: '#961226'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+		</script>
+	</div>
+</section>
+
+<section id="candidates">
+	<h2>その他のキャスト<em>候補</em></h2>
+	<div id="cast_candidates">
+			<a href="http://twitter.com/morifumiya" class="user female"><img src="http://api.dan.co.jp/twicon/morifumiya/normal" alt="" title="森谷ふみ (@morifumiya)" /></a>
+			<a href="http://twitter.com/kirio44" class="user female"><img src="http://api.dan.co.jp/twicon/kirio44/normal" alt="" title="吉村きりを (@kirio44)" /></a>
+			<a href="http://twitter.com/3ca_mika" class="user female"><img src="http://api.dan.co.jp/twicon/3ca_mika/normal" alt="" title="蜜 (@3ca_mika)" /></a>
+			<a href="http://twitter.com/uxxxsugachan" class="user female"><img src="http://api.dan.co.jp/twicon/uxxxsugachan/normal" alt="" title="菅原 夕 (@uxxxsugachan)" /></a>
+			<a href="http://twitter.com/IshitoyaChigusa" class="user female"><img src="http://api.dan.co.jp/twicon/IshitoyaChigusa/normal" alt="" title="イシトヤチグサ (@IshitoyaChigusa)" /></a>
+			<a href="http://twitter.com/kamabokocat" class="user female"><img src="http://api.dan.co.jp/twicon/kamabokocat/normal" alt="" title="吉田まほ子 (@kamabokocat)" /></a>
+			<a href="http://twitter.com/gizensyaright" class="user male"><img src="http://api.dan.co.jp/twicon/gizensyaright/normal" alt="" title="安井かずとし (@gizensyaright)" /></a>
+			<a href="http://twitter.com/jukejun" class="user male"><img src="http://api.dan.co.jp/twicon/jukejun/normal" alt="" title="屋部 純 (@jukejun)" /></a>
+			<a href="http://twitter.com/orzccc" class="user male"><img src="http://api.dan.co.jp/twicon/orzccc/normal" alt="" title="大貫アイ (@orzccc)" /></a>
+			<a href="http://twitter.com/tarikimaruyama" class="user male"><img src="http://api.dan.co.jp/twicon/tarikimaruyama/normal" alt="" title="タリキ丸山 (@tarikimaruyama)" /></a>
+			<a href="http://twitter.com/tarikitakemasa" class="user male"><img src="http://api.dan.co.jp/twicon/tarikitakemasa/normal" alt="" title="タリキ武政 (@tarikitakemasa)" /></a>
+			<a href="http://twitter.com/makaronijeapan" class="user male"><img src="http://api.dan.co.jp/twicon/makaronijeapan/normal" alt="" title="小林大介 (@makaronijeapan)" /></a>
+			<a href="http://twitter.com/axecom" class="user male"><img src="http://api.dan.co.jp/twicon/axecom/normal" alt="" title="斧口智彦 (@axecom)" /></a>
+			<a href="http://twitter.com/24itter" class="user male"><img src="http://api.dan.co.jp/twicon/24itter/normal" alt="" title="西 秀進 (@24itter)" /></a>
+			<a href="http://twitter.com/naosugi" class="user male"><img src="http://api.dan.co.jp/twicon/naosugi/normal" alt="" title="スギウラ (@naosugi)" /></a>
+			<a href="http://twitter.com/tekuriha" class="user male"><img src="http://api.dan.co.jp/twicon/tekuriha/normal" alt="" title="大友久志 (@tekuriha)" /></a>
+			<a href="http://twitter.com/MORIMOTOYsuke" class="user male"><img src="http://api.dan.co.jp/twicon/MORIMOTOYsuke/normal" alt="@MORIMOTOYsuke" title="もりもっこり (@MORIMOTOYsuke)" /></a>
+			<a href="http://twitter.com/pino_en" class="tw user male"><img src="http://api.dan.co.jp/twicon/pino_en/normal" alt="@pino_en" title="pino (@pino_en)" /></a>
+			<a href="http://twitter.com/RYO_MURASHIMA" class="tw user male"><img src="http://api.dan.co.jp/twicon/RYO_MURASHIMA/normal" alt="@RYO_MURASHIMA" title="村島リョウ (@RYO_MURASHIMA)" /></a>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(
+			function() {
+				$('#cast_candidates').jqDock({
+					size: 24,
+					labels: 'bc'
+				})
+			}
+		);
+	</script>
+</section>
+
+<section id="rule-stage">
+	<h2>出演ステージ</h2>
+	<p>今回は2チームによるパラレルステージ。公演期間までのバトルの結果、より応援されたチームが、より多くステージに立てる。</p>
+	<table id="stages">
+		<caption>2011年5月公演</caption>
+		<thead>
+			<th scope="col">5/</th>
+			<th scope="col">3(火)</th>
+			<th scope="col">4(水)</th>
+			<th scope="col">5(木)</th>
+			<th scope="col">6(金)</th>
+			<th scope="col">7(土)</th>
+			<th scope="col">8(日)</th>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">昼</th>
+				<td></td>
+				<td>◎</td>
+				<td>○</td>
+				<td>◎</td>
+				<td>○</td>
+				<td>◎</td>
+			</tr>
+			<tr>
+				<th scope="row">夜</th>
+				<td>◎</td>
+				<td>○</td>
+				<td>◎</td>
+				<td>○</td>
+				<td>◎</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+	<dl>
+		<dt>◎</dt>
+		<dd>勝ったチーム全<strong>6</strong>ステージ</dd>
+		<dt>○</dt>
+		<dd>負けたチーム全<strong>4</strong>ステージ</dd>
+	</dl>
+</section>
+
+<section id="rule-login">
+	<h2>バトルへのログイン</h2>
+	<p>ツイゲキ ver.2.0 は、<br />
+「<%= @team_a.title %>」か「<%= @team_b.title %>」を選ぶフォロワー参加型バトルです。<br />
+毎週どちらかのコンテンツを視聴するごとに応援ポイント 10pt が加算されます。<br />
+（ログインにはツイッターのアカウントが必要です。）
+	</p>
+	<p>
+これから約一週間毎に、<br />
+両チームがそれぞれにコンテンツをアップしていきます。<br />
+「<strong><%= @team_a.title %></strong>を応援」で一度ログインいたしますと、<br />
+<strong>「裏切る」</strong>まで「<%= @team_b.title %>」のコンテンツを視聴することはできません。<br />
+（チームを裏切ると -20pt となります。＜※裏切りには 20pt が必要です＞）
+	</p>
+	<p>
+ポイントを増やすのは同じチームを応援することと、<br />
+仲間を同じチームに参加させることで増やすことが可能です。（１人 10pt）
+	</p>
+	<a href="http://google.com/">応援する</a>
+</section>
+
+
+<footer>
+<div class="memo">
+	<h4>memo</h4>
+	<%= url_for :index %><br />
+	<br />
+	<%= TWGKCONF[:email] %><br />
+	<%= TWGKCONF.inspect %><br />
+	<br />
+	<%= input_tag :text, :class => "demo" %><br />
+</div>
+
+<div id="session">
+	<%= session.inspect %><br />
+</div>
+</footer>

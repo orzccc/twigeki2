@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+<meta charset="utf-8" />
+<title>ツイゲキ2.0 | ツイゲキ.com</title>
+<%= partial(:script) %>
+<link rel="shortcut icon" href="http://twigeki.com/media/2010/10/twigeki-icon" />
+<link rel="stylesheet" href="/stylesheets/2.css" type="text/css" media="screen" />
+</head>
+
+<body id="2.twigeki.com">
+
+<!--IE6 No More [[-->
+<!--[if lt IE 8]>
+<div class="legacy" style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+  <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display='none'; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+  <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+    <div style='width: 60px; float: left; clear: none;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+    <div style='width: 250px; float: left; clear: none; font-family: Arial, sans-serif;'>
+      <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>あなたは旧式ブラウザをご利用中です</div>
+      <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>このウェブサイトを快適に閲覧するにはブラウザをアップグレードしてください。</div>
+    </div>
+    <div style='width: 70px; float: left; clear: none;'><a href='http://www.mozilla.jp' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+    <div style='width: 70px; float: left; clear: none;'><a href='http://www.microsoft.com/downloads/details.aspx?FamilyID=341c2ad5-8c3d-4347-8c03-08cdecd8852b&DisplayLang=ja' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+    <div style='width: 70px; float: left; clear: none;'><a href='http://www.google.com/chrome?hl=ja' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+    <div style='width: 70px; float: left; clear: none;'><a href='http://www.apple.com/jp/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>
+  </div>
+</div>
+<![endif]-->
+<!--]] IE6 No More-->
+
+<% if flash[:notice] %>
+<div class="notice">
+	<%= flash[:notice] %>
+</div>
+<% end %>
+
+<header>
+	<h1>
+		<span class="sub">Twitterから始まる劇団</span>
+		<span class="twigeki">ツイゲキ ver.2.0</span>
+		<span class="title">Pure</span>
+		<span class="copy">まっすぐ生きちゃ、ダメですか？</span>
+	</h1>
+	<div id="current_user">
+<% if current_user %>
+		<a href="http://twitter/<%= current_user.screen_name %>" class="user"><img src="http://api.dan.co.jp/twicon/<%= current_user.screen_name %>/mini" /> <%= current_user.screen_name %></a>
+		<span class="point"><em><%= current_user.point %></em>ポイント</span>
+		<a href="/logout" class="to-logout">ログアウト</a>
+<% else %>
+		<a href="/login">Log in with Twitter</a>
+<% end %>
+	</div>
+</header>
+
+<nav>
+	<ul>
+		<li><a title="ツイゲキ関連のつぶやき・ツイゲキ.comの最新情報" href="http://twigeki.com/">ホーム</a></li>
+		<li><a title="現在進行形の企画を紹介!" href="http://twigeki.com/now">なう! <img src="http://twigeki.com/wordpress/wp-content/themes/twigeki/ustream2web.cgi" /></a></li>
+		<li><a title="ツイゲキって? 主催者からのメッセージ" href="http://twigeki.com/twigeki">ツイゲキって何？</a></li>
+		<li><a title="ツイゲキ初公演『FUKENZEN』2010/11/25(木)・27(土)・28(日) 全6ステージ" href="http://twigeki.com/stage-1">公演情報</a></li>
+		<li><a title="過去イベント一覧。写真も盛り沢山! USTREAM、YouTube 動画も!" href="http://twigeki.com/history">ヒストリー</a></li>
+		<li><a title="激戦のオーディションを経て選ばれたキャストをご紹介! 注目!!" href="http://twigeki.com/cast">キャスト</a></li>
+		<li><a title="ツイゲキの公演チケットやグッズをオンラインでご購入できます。" href="http://twigeki.com/shop">ショップ</a></li>
+	</ul>
+	<ul>
+		<li><a href="http://twitter.com/kataoka_k" class="user">主宰：片岡K</a></li>
+		<li><a href="http://twitter.com/twigeki" class="user">Twitter</a></li>
+		<li><a title="ツイゲキ 代表メールアドレス" href="mailto:info@twigeki.com">お問い合わせ</a></li>
+	</ul>
+</nav>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,446 @@
+body
+{
+	color: #666;
+	background-color: #FFF;
+	font-size: 90%;
+	font-family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho', serif;
+}
+
+a:link
+{
+	color: #000;
+}
+a:visited
+{
+	color: #333;
+}
+a:hover ,
+a:focus
+{
+	color: #E11;
+}
+
+img
+{
+	opacity: 0.9;
+}
+img:hover
+{
+	opacity: 1;
+}
+
+strong
+{
+	color: #F88;
+}
+
+h1 ,
+h2
+{
+	text-align: center;
+	font-size: 100%;
+}
+
+h1
+{
+	margin-top: 0.7em;
+	text-shadow: 2px 1px 1px #DDD;
+}
+h1 span
+{
+	display: block;
+	line-height: 1.4;
+}
+h1 .sub
+{
+	font-size: 70%;
+}
+h1 .twigeki
+{
+	font-size: 110%;
+}
+h1 .title
+{
+	padding-top: 0.2em;
+	text-indent: 0.5em;
+	letter-spacing: 0.5em;
+	font-size: 280%;
+	color: #000;
+	text-shadow: 3px 1px 2px #CCC;
+}
+h1 .copy
+{
+	font-size: 110%;
+}
+
+#teams
+{
+	position: relative;
+	margin-top: 1.3em;
+	text-align: center;
+}
+#teams::after
+{
+	content: '.';
+	font-size: 0;
+	clear: both;
+	color: #FFF;
+}
+#teams h2
+{
+	display: none;
+}
+#teams p
+{
+	clear: both;
+	margin: 0;
+	padding-top: 1em;
+}
+#teams p + p
+{
+	padding-top: 0;
+}
+
+.team
+{
+	display: inline-block;
+	position: relative;
+	width: 20em;
+	min-height: 24em;
+	margin: 0 5px;
+	border: 1px solid #EEE;
+}
+#team_a
+{
+	margin-left:  23%;
+}
+#team_b
+{
+	margin-right: 23%;
+}
+.team h3
+{
+	width: 10em;
+	margin: -1em auto 0;
+	padding: 0.1em 0.3em;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	text-align: center;
+}
+
+table.casting
+{
+	z-index: 2;
+	position: absolute;
+	top: 1.6em;
+	right: 23.5%;
+	left:  25%;
+	width: 50%;
+	max-width: 50em;
+}
+table.casting thead th
+{
+	display: none;
+}
+
+table.casting tbody th img
+{
+	border: 1px solid #EEE;
+	opacity: 1;
+}
+table.casting td
+{
+	width: 14em;
+	text-align: right;
+}
+table.casting th + td
+{
+	text-align: left;
+}
+table.casting td a:before
+{
+	content: attr(title);
+}
+table.casting td img
+{
+	float: right;
+	margin: 0 0 5px 5px;
+}
+table.casting th + td img
+{
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+.cheer-tweets
+{
+	display: none;
+	position: absolute;
+	top: 0;
+}
+#team_a .cheer-tweets
+{
+	left: 0;
+}
+#team_b .cheer-tweets
+{
+	right: 0;
+}
+.team .twtr-widget
+{
+	width: 50px;
+}
+.twtr-widget:hover
+{
+	width: 80em;
+}
+.twtr-hd ,
+.twtr-ft
+{
+	display: none;
+}
+.twtr-tweet
+{
+	border: none !important;
+}
+.twtr-avatar ,
+.twtr-avatar img
+{
+	width:  24px !important;
+	height: 24px !important;
+}
+.twtr-tweet-text
+{
+	display: none;
+	width: 90%;
+	padding: 0.5em;
+	border: 1px solid #666;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #000;
+	z-index: 9999;
+}
+.twtr-avatar:hover + .twtr-tweet-text
+{
+	display: block;
+}
+#team_b .twtr-avatar
+{
+	float: right;
+}
+#team_b .twtr-tweet-text
+{
+	margin: 0 40px 0 0 !important;
+}
+a.to-cheer
+{
+	position: absolute;
+	bottom: -1em;
+	display: block;
+	width: 12.5em;
+	padding: 3px 8px;
+	border: 1px solid #EEE;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+a.to-cheer:hover ,
+a.to-cheer:focus
+{
+	color: #555;
+	background-color: #EEE;
+}
+#team_a a.to-cheer
+{
+	left: -5em;
+}
+#team_b a.to-cheer
+{
+	right: -5em;
+}
+
+#candidates
+{
+	clear: both
+}
+#candidates h2
+{
+	clear: both;
+}
+#candidates h2 em
+{
+	font-size: 130%;
+	font-style: normal;
+}
+.jqDockWrap
+{
+	margin: 0 auto;
+}
+.jqDockLabel
+{
+	z-index: 3;
+	padding: 0 6px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	white-space: nowrap;
+	color: #FFF;
+	background-color: #000;
+	opacity: 0.7;
+}
+.casting tfoot td
+{
+	color: #888;
+}
+.casting tbody td
+{
+}
+
+#cast_candidates ,
+#candidates ul
+{
+	padding-top: 0.5em;
+	text-align: center;
+}
+#candidates li
+{
+	display: inline-block;
+}
+
+td.leader
+{
+}
+
+a.male img
+{
+	border: 1px solid #00F !important;
+}
+a.female img
+{
+	border: 1px solid #F00 !important;
+}
+td a.male   img ,
+td a.female img
+{
+	vertical-align: bottom;
+}
+.point
+{
+	font-size: 80%;
+}
+.point em
+{
+	color: #000;
+	font-size: 200%;
+	font-family: 'Georgia', serif;
+}
+
+nav
+{
+	position: absolute;
+	top: 1em;
+	left: 5px;
+	z-index: 20;
+}
+footer nav
+{
+	right: 5px;
+	left: auto;
+}
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #DDD;
+}
+nav li
+{
+	list-style: none;
+	border-top:   1px solid #DDD;
+	border-right: 1px solid #DDD;
+	border-left:  1px solid #DDD;
+}
+nav a
+{
+	display: block;
+	padding: 0 0.4em 0.1em;
+	font-size: 80%;
+}
+nav a:before
+{
+	content: '→';
+	margin-right: 0.2em;
+	color: #BBB;
+}
+nav a:hover ,
+nav a:focus
+{
+	background-color: #EEE;
+}
+
+#current_user
+{
+	display: table-row;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	vertical-align: center;
+	background-color: #EEE;
+}
+#current_user .user:hover ,
+#current_user .user:focus
+{
+	text-decoration: none;
+}
+#current_user .tw img
+{
+	vertical-align: bottom;
+}
+.to-logout
+{
+	font-size: 50%;
+}
+
+header .notice
+{
+	color: #F00;
+	text-shadow: 1px 1px 1px #FFF;
+	font-weight: bold;
+	text-align: center;
+}
+
+#rule-stage h2
+{
+	padding: 2em 0 0.5em;
+}
+#rule-stage dl
+{
+	margin: 0 auto;
+	text-align: center;
+}
+#rule-stage p
+{
+	text-align: center;
+}
+#rule-stage dt ,
+#rule-stage dd
+{
+	display: inline-block;
+	margin: 0;
+}
+
+table#stages
+{
+	margin: 0 auto;
+}
+
+#rule-stage ,
+#rule-login
+{
+	display: none;
+	text-align: center;
+}
+#SpookContent section
+{
+	display: block;
+}

@@ -1,0 +1,14 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first=link_to pat(:list), url(:auditions, :index)
+      %li.active=link_to pat(:new), url(:auditions, :new)
+  .content
+    %h2.title
+      =pat(:new)
+      =mt(:audition)
+    .inner
+      -form_for :audition, url(:auditions, :create), :class => :form do |f|
+        =partial "auditions/form", :locals => { :f => f }
+
+-content_for :sidebar, partial("base/sidebar")

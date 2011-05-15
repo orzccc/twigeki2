@@ -1,0 +1,28 @@
+.group
+  =f.label :title
+  =f.error_message_on :title
+  =f.text_field :title, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :vote_from
+  =f.error_message_on :vote_from
+  =f.text_field :vote_from, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :vote_until
+  =f.error_message_on :vote_until
+  =f.text_field :vote_until, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :published_at
+  =f.error_message_on :published_at
+  =f.text_field :published_at, :class => :text_field
+  %span.description Ex: a simple text
+
+
+.group.navform.wat-cf
+  =f.submit pat(:save), :class => :button
+  =f.submit pat(:cancel), :onclick => "window.location='#{url(:auditions, :index)}';return false", :class => :button

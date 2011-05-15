@@ -1,0 +1,52 @@
+.group
+  =f.label :twitter_id
+  =f.error_message_on :twitter_id
+  =f.text_field :twitter_id, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :screen_name
+  =f.error_message_on :screen_name
+  =f.text_field :screen_name, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :token
+  =f.error_message_on :token
+  =f.text_field :token, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :secret
+  =f.error_message_on :secret
+  =f.text_field :secret, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :team_id
+  =f.error_message_on :team_id
+  =f.text_field :team_id, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :point
+  =f.error_message_on :point
+  =f.text_field :point, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :is_admin
+  =f.error_message_on :is_admin
+  =f.check_box :is_admin, :class => :check_box
+  %span.description Ex: a simple text
+
+.group
+  =f.label :invited_by
+  =f.error_message_on :invited_by
+  =f.text_field :invited_by, :class => :text_field
+  %span.description Ex: a simple text
+
+
+.group.navform.wat-cf
+  =f.submit pat(:save), :class => :button
+  =f.submit pat(:cancel), :onclick => "window.location='#{url(:users, :index)}';return false", :class => :button

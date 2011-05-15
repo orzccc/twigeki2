@@ -1,0 +1,9 @@
+development:
+  email: "development@example.com"
+
+production:
+  email: "production@example.com"
+
+test:
+  email: "test@example.com"
+

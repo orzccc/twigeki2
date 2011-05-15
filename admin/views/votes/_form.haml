@@ -1,0 +1,16 @@
+.group
+  =f.label :candidate_id
+  =f.error_message_on :candidate_id
+  =f.text_field :candidate_id, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :user_id
+  =f.error_message_on :user_id
+  =f.text_field :user_id, :class => :text_field
+  %span.description Ex: a simple text
+
+
+.group.navform.wat-cf
+  =f.submit pat(:save), :class => :button
+  =f.submit pat(:cancel), :onclick => "window.location='#{url(:votes, :index)}';return false", :class => :button

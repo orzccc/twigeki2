@@ -9,4 +9,5 @@ Gemfile.lock
 config/settings.yml
 config/secret.txt
 db/*.db
-
+.htpasswd
+.htaccess
